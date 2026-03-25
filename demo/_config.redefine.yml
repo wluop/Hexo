@@ -11,7 +11,7 @@
 # Docs: https://redefine-docs.ohevan.com/basic/info
 info:
   # Site title
-  title: 
+  title: Wluop
   # Site subtitle
   subtitle: 
   # Author name
@@ -54,7 +54,7 @@ global:
     chinese: 
       enable: false # Whether to enable custom chinese fonts
       family:  # Font family
-      url:  # Font URL to CSS file
+      url: https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap # Font URL to CSS file
     # English fonts
     english: 
       enable: false # Whether to enable custom english fonts
@@ -71,7 +71,7 @@ global:
   sidebar_width: 210px
   # Effects on mouse hover
   hover:
-    shadow: true # shadow effect
+    shadow: false # shadow effect
     scale: false # scale effect
   # Scroll progress
   scroll_progress:
@@ -128,16 +128,16 @@ home_banner:
   # Whether to enable home banner
   enable: true
   # style of home banner
-  style: static  # static or fixed
+  style: fixed  # static or fixed
   # Home banner image
   image: 
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
-  title: 我抄了
+  title: 师傅你是做什么工作的？
   # Home banner subtitle
   subtitle:
-    text: [] # subtitle text, array
+    text: ["This is the first message", "This is the second message", "etc"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       show_author: false # Whether to show author
@@ -169,18 +169,18 @@ home_banner:
     # URL to font CSS file
     url:
   # Home banner social links
-  social_links:
+  social_links: 
     # Whether to enable
-    enable: false
+    enable: true  
     # Social links style
-    style: default # default, reverse, center
+    style: center # default, reverse, center
     # Social links
     links:
       - icon: github # can also be "fa-brands fa-github"
         url:
       - icon: twitter
         url:
-      - icon: email
+      - icon: email 
         url: you@example.com
       - icon: telegram
         url:
@@ -188,9 +188,16 @@ home_banner:
         url:
     # Social links with QRcode drawers
     qrs:
+      - icon:  github
+        qr: https://github.com/wluop
+
+      - icon:  twitter
+        qr: https://github.com/wluop
+
       - icon: weixin
-        qr:
-      - icon: /images/custom-icon.svg
+        qr: /image/er.jpg
+        
+      - icon: /images/custom-icon.svg 
         qr:
 # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
@@ -199,7 +206,7 @@ home_banner:
 # Docs: https://redefine-docs.ohevan.com/home/navbar
 navbar:
   # Auto hide navbar
-  auto_hide: false
+  auto_hide: true 
   # Navbar background color
   color:
     left: "#f78736" #left side 
