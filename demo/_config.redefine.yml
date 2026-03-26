@@ -52,7 +52,7 @@ global:
   fonts:
     # Chinese fonts
     chinese: 
-      enable: false # Whether to enable custom chinese fonts
+      enable: true  # Whether to enable custom chinese fonts
       family:  # Font family
       url: https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap # Font URL to CSS file
     # English fonts
@@ -66,13 +66,13 @@ global:
       family:  # Font family
       url:  # Font URL to CSS file
   # Content max width
-  content_max_width: 1000px
+  content_max_width: 1200px
   # Sidebar width
   sidebar_width: 210px
   # Effects on mouse hover
   hover:
-    shadow: false # shadow effect
-    scale: false # scale effect
+    shadow: true # shadow effect
+    scale: true # scale effect
   # Scroll progress
   scroll_progress:
     bar: false # progress bar
@@ -137,16 +137,16 @@ home_banner:
   title: 师傅你是做什么工作的？
   # Home banner subtitle
   subtitle:
-    text: ["This is the first message", "This is the second message", "etc"] # subtitle text, array
+    text: ['Loading...'] # subtitle text, array
     hitokoto:  # 一言配置
-      enable: false # Whether to enable hitokoto
-      show_author: false # Whether to show author
+      enable: true # Whether to enable hitokoto
+      show_author: true # Whether to show author
       api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
     typing_speed: 100 # Typing speed (ms)
     backing_speed: 80 # Backing speed (ms)
     starting_delay: 500 # Start delay (ms)
     backing_delay: 1500 # Backing delay (ms)
-    loop: true # Whether to loop
+    loop: false # Whether to loop
     smart_backspace: true # Whether to smart backspace
   # Color of home banner text
   text_color: 
@@ -177,27 +177,27 @@ home_banner:
     # Social links
     links:
       - icon: github # can also be "fa-brands fa-github"
-        url:
+        url: https://github.com/wluop
       - icon: twitter
-        url:
-      - icon: email 
-        url: you@example.com
-      - icon: telegram
-        url:
+        url: https://twitter.com/wluop
+      - icon: weixin
+        url: https://github.com/wluop
+      - icon: email
+        url: you@example.com 
       - icon: /images/custom-icon.svg
         url:
     # Social links with QRcode drawers
-    qrs:
-      - icon:  github
-        qr: https://github.com/wluop
+   # qrs:
+     # - icon:  github
+      #  qr: https://github.com/wluop
 
-      - icon:  twitter
-        qr: https://github.com/wluop
+     # - icon:  twitter
+      #  qr: https://github.com/wluop
 
-      - icon: weixin
-        qr: /image/er.jpg
-      - icon: /images/custom-icon.svg 
-        qr:
+      #- icon: weixin
+      #  qr: /image/er.jpg
+     #- icon: /images/custom-icon.svg 
+      #  qr:
 # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -205,12 +205,12 @@ home_banner:
 # Docs: https://redefine-docs.ohevan.com/home/navbar
 navbar:
   # Auto hide navbar
-  auto_hide: true 
+  auto_hide: false 
   # Navbar background color
   color:
-    left: "#f78736" #left side 
-    right: "#367df7"  #right side
-    transparency: 35 #percent (10-99)
+    left: "#fffff" #left side 
+    right: "#fffff"  #right side
+    transparency: 99 #percent (10-99)
   # Navbar width (usually no need to modify)
   width:
     home: 1200px #home page
@@ -219,7 +219,7 @@ navbar:
   links:
         
   
-    photo: 
+    图片: 
       icon: fa-solid fa-image #图标
       path: /masonry/
     Home: 
@@ -258,22 +258,22 @@ navbar:
 # Docs: https://redefine-docs.ohevan.com/home/home
 home:
   # Sidebar settings
-  sidebar:
-    enable: true # Whether to enable sidebar
-    position: left # Sidebar position. left, right
-    first_item: menu # First item in sidebar. menu, info
-    announcement: # Announcement text
+  sidebar: 
+    enable: false # Whether to enable sidebar
+    position: right # Sidebar position. left, right
+    first_item: info # First item in sidebar. menu, info
+    announcement: 这个人很懒什么都不想写 # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
-      # Archives: 
-      #   path: /archives 
-      #   icon: fa-regular fa-archive # can be empty
-      # Tags: 
-      #   path: /tags 
-      #   icon: fa-regular fa-tags # can be empty
-      # Categories: 
-      #   path: /categories 
-      #   icon: fa-regular fa-folder # can be empty
+       档案: 
+         path: /archives 
+         icon: fa-regular fa-archive # can be empty
+       标签: 
+         path: /tags 
+         icon: fa-regular fa-tags # can be empty
+       文件: 
+         path: /categories 
+         icon: fa-regular fa-folder # can be empty
       # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
@@ -333,9 +333,9 @@ articles:
       url: # Font URL to CSS file
   # Table of contents settings
   toc:
-    enable: false # Whether to enable TOC
+    enable: true # Whether to enable TOC
     max_depth: 3 # TOC depth
-    number: false # Whether to add number to TOC automatically
+    number: true # Whether to add number to TOC automatically
     expand: true # Whether to expand TOC
     init_open: true # Open toc by default
   # Whether to enable copyright notice
