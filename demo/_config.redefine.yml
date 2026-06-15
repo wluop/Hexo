@@ -37,9 +37,9 @@ defaults:
 # Docs: https://redefine-docs.ohevan.com/basic/colors
 colors:
   #Primary color
-  primary: "#A31F34"
+  primary: "#1f44a3"
   # Secondary color (TBD)
-  secondary:
+  secondary: "#009cff"
   # Default theme mode initial value (will be overwritten by prefer-color-scheme)
   default_mode: light # light, dark
 # COLORS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -134,7 +134,7 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
-  title: 师傅你是做什么工作的？
+  title: Anything is Possible
   # Home banner subtitle
   subtitle:
     text: ['Loading...'] # subtitle text, array
@@ -210,7 +210,7 @@ navbar:
   color:
     left: "#fffff" #left side 
     right: "#fffff"  #right side
-    transparency: 99 #percent (10-99)
+    transparency: 35 #percent (10-99)
   # Navbar width (usually no need to modify)
   width:
     home: 1200px #home page
@@ -219,7 +219,7 @@ navbar:
   links:
         
   
-    图片: 
+    相册: 
       icon: fa-solid fa-image #图标
       path: /masonry/
     Home: 
@@ -298,7 +298,7 @@ articles:
   # Set the styles of the article
   style:
     font_size: 16px # Font size
-    line_height: 1.5 # Line height
+    line_height: 1.8 # Line height
     image_border_radius: 7px # image border radius
     image_alignment: left # image alignment. left, center
     image_caption: false # Whether to display image caption
@@ -467,19 +467,19 @@ plugins:
     enable: false # Whether to enable
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
-    enable: false # Whether to enable
+    enable: true # Whether to enable
     type: fixed # fixed, mini
     audios:
-      - name: # audio name
-        artist: # audio artist
-        url: # audio url
-        cover: # audio cover url
+      - name: Imagine  # audio name
+        artist: John Lennon # audio artist
+        url: https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3 # audio url
+        cover: https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg # audio cover url
         lrc: # audio cover lrc
-#      - name: # audio name
-#        artist: # audio artist
-#        url: # audio url
-#        cover: # audio cover url
-#        lrc: # audio cover lrc
+      - name: Be The One (feat. 百足)  # audio name
+        artist: Nozomi Kitay / GAL D / 百足 # audio artist
+        url: https://m701.music.126.net/20260615142424/565219fec975aa386c86d0ac45fbffb1/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/44730114140/e285/818f/583e/1a2cc2dcb02e07b2abd5e0e4c7280556.mp3?vuutv=L9SZOE/8wdKsBJYyfmrOewZ0RtetU6rsS4Hde0+hwZ1PcSxKAAi47Hzk/pkJq5lutzdlv+rLG6RpZBaN5Fih3MAGHh0AWtJT+bJ9WmcNbfuNZHekNdyGm29IE7VHmERP8Pl3nOlsl2ue2qI5yNTWs5taeL4OsyXkKGc0/yecMP8fgmVoZ+xOSzyUNLxKOW+Yf2zGBo0BQfaCQK5PWJ7eUsBEHAzt3oNVpgoUd7WUVkvGriwAj+CyjaG/1KPu+AysoAZo8wiY2vZmgbURbvJtbsl2W6nJSK/WcdaunlO+PArwxKpdViVIsnxR6Kjv17oqAul+Ajll6DSoT4tlw4Iyzeou+An7D+pvT89uHnOhamH62e79+yYLk8bmf+Fy5gDS&cdntag=bWFyaz1vc193ZWIscXVhbGl0eV9zdGFuZGFyZA # audio url
+        cover: https://p2.music.126.net/Xa-zZsKyEu86-NrB5KoyIA==/109951169805683323.jpg?param=90y90 # audio cover url
+        lrc:  # audio cover lrc
       # .... you can add more audios here
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
   mermaid:
