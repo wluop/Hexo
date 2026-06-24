@@ -20,7 +20,7 @@
   description: ...
 - image: /images/xc/zp6.JPG
   exif: true
-  title: 刀片
+  title: 风磨笔
   description: ...
 - image: /images/xc/zp7.JPG
   exif: true
@@ -41,4 +41,8 @@
 - image: /images/xc/zp11.JPG
   exif: true
   title: 砂轮修整器
+  description: ...
+- image: /images/xc/zp12.JPG
+  exif: true
+  title: 杠杠百分表
   description: ...
