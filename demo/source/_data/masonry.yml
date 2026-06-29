@@ -18,7 +18,7 @@
   exif: true
   title: 风磨笔
   description: ...
-- image: /images/xc/zp7.JPG
+- image: /images/xc/zp13.JPG
   exif: true
   title: 刀柄
   description: ...
@@ -43,6 +43,10 @@
   title: 倒角机
   description: ...
 - image: /images/xc/zp5.JPG
+  exif: true
+  title: 数显对刀仪
+  description: ...
+- image: /images/xc/zp7.JPG
   exif: true
   title: 数显对刀仪
   description: ...
