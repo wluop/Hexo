@@ -26,9 +26,9 @@
   exif: true
   title: 百分表 
   description: ...
-- image: /images/xc/zp8.JPG
+- image: /images/xc/zp16.JPG
   exif: true
-  title: 精镗头
+  title: 质感纹路
   description: ...
 - image: /images/xc/zp9.JPG
   exif: true
@@ -42,15 +42,23 @@
   exif: true
   title: 倒角机
   description: ...
-- image: /images/xc/zp5.JPG
-  exif: true
-  title: 数显对刀仪
-  description: ...
 - image: /images/xc/zp7.JPG
+  exif: true
+  title: 刀柄
+  description: ...
+- image: /images/xc/zp5.JPG
   exif: true
   title: 数显对刀仪
   description: ...
 - image: /images/xc/zp14.JPG
   exif: true
   title: 布料
+  description: ...
+- image: /images/xc/zp15.JPG
+  exif: true
+  title: 外径千分尺
+  description: ...
+- image: /images/xc/zp8.JPG
+  exif: true
+  title: 精镗头
   description: ...
